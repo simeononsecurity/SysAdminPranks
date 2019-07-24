@@ -1,0 +1,1 @@
+Invoke-Command -computername $computername -ScriptBlock {(Add-Type -AssemblyName System.speech), ($speak = New-Object System.Speech.Synthesis.SpeechSynthesizer), ($speak.Speak('Your Message Here'))} -credential Domain\Username
